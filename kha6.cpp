@@ -12,13 +12,16 @@ int main (){
 			scanf("%d",&a[i][j]);
 		}
 	}
-    printf("cac phan tu duong cheo chinh la:");
+	int tong=0;
+    printf("cac phan tu duong cheo chinh la:\n");
 	for(int i=0;i<n;i++){
 		for(int j=0;j<m;j++){
         if(i==j){
-        printf("%d",a[i][j]);
+        tong+=a[i][j];
+        printf("%2d",a[i][j]);
       }
 }}
+    printf("tong cua cac phan tu duong cheo chinh la: %d",tong);
 
     return 0;
 }
